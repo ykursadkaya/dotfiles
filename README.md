@@ -1,0 +1,2 @@
+# YKK's macOS dotfiles
+

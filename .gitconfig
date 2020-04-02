@@ -1,0 +1,19 @@
+[user]
+	name = Yusuf Kursad Kaya
+	email = ykursadkaya@gmail.com
+	username = ykursadkaya
+	signingkey = EB3FBC405E0C2A2B
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = osxkeychain
+[color]
+	ui = auto
+[core]
+	excludesfile = /Users/ykursadkaya/.gitignore_global
+[commit]
+	template = /Users/ykursadkaya/.stCommitMsg
+	gpgsign = true

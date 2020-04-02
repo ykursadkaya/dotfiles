@@ -1,0 +1,51 @@
+export CLICOLOR=1
+
+export PS1="%B%F{34}%n%f%F{8}@%f%F{34}%m%f%F{8}:%f %F{12}%~%f%F{8}%#%f%b "
+
+export PATH="/usr/local/sbin:$PATH"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v14)
+# export CLASSPATH=/Library/Java/Extensions:~/Library/Java/Extensions
+# alias java8='export JAVA_HOME=$JAVA_8_HOME'
+# default java8
+# export JAVA_HOME=$JAVA_8_HOME
+
+# export GOPATH=/Users/ykursadkaya/Go/
+# PATH=$GOPATH/bin:$PATH
+
+alias clr-clip='echo -n "" | pbcopy'
+
+alias led='bash ~/rgb.sh'
+
+alias python='python3'
+
+alias py3='python3'
+
+alias pip2-upgrade='pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip2 install -U'
+
+alias pip3-upgrade='pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
+
+export GPG_TTY=$(tty)
+
+alias cdgr='cd ~/Documents/GitHub_Repos'
+
+jdk() {
+        version=$1
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        java -version
+ }
+
+function spot() {
+  mdfind "kMDItemFSName=='*$@*'cd";
+}
+
+function remac {
+  sudo /System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport -z
+  sudo ifconfig en0 ether $(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
+  sudo networksetup -detectnewhardware
+  echo $(ifconfig en0 | grep ether)
+}
+
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+disable r
