@@ -15,6 +15,9 @@ export JAVA_HOME=$(/usr/libexec/java_home -v14)
 
 alias clr-clip='echo -n "" | pbcopy'
 
+alias bfu='brew update && brew upgrade && brew cu -ac'
+alias bfuc='brew update && brew upgrade && brew cu -acy && brew cleanup --prune 0'
+
 alias led='bash ~/rgb.sh'
 
 alias python='python3'
