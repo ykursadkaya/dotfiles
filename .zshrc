@@ -20,9 +20,9 @@ alias bfuc='brew update && brew upgrade && brew cu -acy && brew cleanup --prune 
 
 alias led='bash ~/rgb.sh'
 
-alias python='python3'
-alias py3='python3'
-alias pip='pip3'
+alias python='python3.7'
+alias py3='python3.7'
+alias pip='pip3.7'
 
 alias pip2-upgrade='pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip2 install -U'
 alias pip3-upgrade='pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
