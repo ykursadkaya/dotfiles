@@ -4,7 +4,7 @@ export PS1="%B%F{34}%n%f%F{8}@%f%F{34}%m%f%F{8}:%f %F{12}%~%f%F{8}%#%f%b "
 
 export PATH="/usr/local/sbin:$PATH"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v14)
+export JAVA_HOME=$(/usr/libexec/java_home -v15)
 # export CLASSPATH=/Library/Java/Extensions:~/Library/Java/Extensions
 # alias java8='export JAVA_HOME=$JAVA_8_HOME'
 # default java8
@@ -12,6 +12,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v14)
 
 export GOPATH=/Users/$USER/.go/
 PATH=$GOPATH/bin:$PATH
+
+export NODE_PATH='/usr/local/lib/node_modules'
 
 alias clr-clip='echo -n "" | pbcopy'
 
@@ -27,14 +29,16 @@ alias pip='pip3'
 alias pip2-upgrade='pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip2 install -U'
 alias pip3-upgrade='pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
 
+alias sshnull='ssh -o "UserKnownHostsFile /dev/null"'
+
 export GPG_TTY=$(tty)
 
-alias cdgr='cd ~/Documents/GitHub_Repos'
+alias cdgr='cd ~/Documents/GitHub'
 
 jdk() {
-        version=$1
-        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
-        java -version
+    version=$1
+    export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+    java -version
  }
 
 function spot() {
