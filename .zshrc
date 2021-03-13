@@ -13,23 +13,25 @@ export JAVA_HOME=$(/usr/libexec/java_home -v15)
 export GOPATH=/Users/$USER/.go/
 PATH=$GOPATH/bin:$PATH
 
-export NODE_PATH='/usr/local/lib/node_modules'
-
 alias clr-clip='echo -n "" | pbcopy'
 
 alias bfu='brew update && brew upgrade && brew cu -ac'
 alias bfuc='brew update && brew upgrade && brew cu -acy && brew cleanup --prune 0'
 
-alias led='bash ~/rgb.sh'
+# alias led='bash ~/rgb.sh'
 
 alias python='python3'
 alias py3='python3'
+alias py='python3'
 alias pip='pip3'
 
-alias pip2-upgrade='pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip2 install -U'
+# alias pip2-upgrade='pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip2 install -U'
 alias pip3-upgrade='pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
+alias pip-upgrade='pip3-upgrade'
 
 alias sshnull='ssh -o "UserKnownHostsFile /dev/null"'
+
+alias fzfh='tail -r .zsh_history | fzf | tee >(zsh)'
 
 export GPG_TTY=$(tty)
 
