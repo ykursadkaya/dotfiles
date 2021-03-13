@@ -2,7 +2,7 @@ export CLICOLOR=1
 
 export PS1="%B%F{34}%n%f%F{8}@%f%F{34}%m%f%F{8}:%f %F{12}%~%f%F{8}%#%f%b "
 
-export JAVA_HOME=$(/usr/libexec/java_home -v14)
+export JAVA_HOME=$(/usr/libexec/java_home -v15)
 # default java8
 # export JAVA_HOME=$JAVA_8_HOME
 
