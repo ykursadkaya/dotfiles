@@ -31,7 +31,7 @@ alias pip-upgrade='pip3-upgrade'
 
 alias sshnull='ssh -o "UserKnownHostsFile /dev/null"'
 
-alias fzfh='tail -r .zsh_history | fzf | tee >(zsh)'
+alias fzfh='tail -r ~/.zsh_history | fzf | tee >(zsh)'
 
 export GPG_TTY=$(tty)
 
