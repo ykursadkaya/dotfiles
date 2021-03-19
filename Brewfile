@@ -162,6 +162,7 @@ cask "balenaetcher"
 cask "blackhole-16ch"
 # Virtual Audio Driver
 cask "blackhole-2ch"
+# Web security testing toolkit
 cask "burp-suite"
 # Shoutcast and Icecast streaming client
 cask "butt"
@@ -238,6 +239,7 @@ cask "sublime-text"
 cask "suspicious-package"
 # Open-source BitTorrent client
 cask "transmission"
+# Free and open-source OpenVPN client
 cask "tunnelblick"
 # Configurable document editor that supports Markdown
 cask "typora"
