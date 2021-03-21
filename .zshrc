@@ -4,7 +4,7 @@ export PS1="%B%F{34}%n%f%F{8}@%f%F{34}%m%f%F{8}:%f %F{12}%~%f%F{8}%#%f%b "
 
 export PATH="/usr/local/sbin:$PATH"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v15)
+export JAVA_HOME=$(/usr/libexec/java_home -v16)
 # export CLASSPATH=/Library/Java/Extensions:~/Library/Java/Extensions
 # alias java8='export JAVA_HOME=$JAVA_8_HOME'
 # default java8
