@@ -79,6 +79,8 @@ brew "iperf"
 brew "iperf3"
 # Modular IRC client
 brew "irssi"
+# Audio Connection Kit
+brew "jack"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Text-based web browser
@@ -93,6 +95,10 @@ brew "minicom"
 brew "minikube"
 # Intercept, modify, replay, save HTTP/S traffic
 brew "mitmproxy"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# Media player based on MPlayer and mplayer2
+brew "mpv"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Free (GNU) replacement for the Pico text editor
@@ -113,6 +119,8 @@ brew "picocom"
 brew "pinentry-mac"
 # Object-relational database system
 brew "postgresql"
+# Sound system for POSIX OSes
+brew "pulseaudio"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # QR Code generation
@@ -125,6 +133,8 @@ brew "scrcpy"
 brew "shellcheck"
 # SOcket CAT: netcat on steroids
 brew "socat"
+# SOund eXchange: universal sound sample translator
+brew "sox"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Proxy server that works as a poor man's VPN
@@ -137,8 +147,6 @@ brew "tldr"
 brew "watch"
 # Internet file retriever
 brew "wget"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # High-performance, schema-free, document-oriented database
@@ -154,6 +162,8 @@ cask "adoptopenjdk8-openj9"
 cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
+# Digital audio mixing application
+cask "au-lab"
 # Two-factor authentication software
 cask "authy"
 # Tool to flash OS images to SD cards & USB drives
@@ -194,6 +204,7 @@ cask "iterm2"
 cask "loopback"
 # Track and update to the latest versions of installed software
 cask "macupdater"
+cask "microsoft-teams"
 # Open-source, low-latency, high quality voice chat software for gaming
 cask "mumble"
 # Open-source music notation software
