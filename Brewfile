@@ -1,11 +1,13 @@
 tap "adoptopenjdk/openjdk"
 tap "buo/cask-upgrade"
 tap "heroku/brew"
+tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "homebrew/command-not-found"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/test-bot"
@@ -164,6 +166,8 @@ cask "android-platform-tools"
 cask "appcleaner"
 # Digital audio mixing application
 cask "au-lab"
+# Multi-track audio editor and recorder
+cask "audacity"
 # Two-factor authentication software
 cask "authy"
 # Tool to flash OS images to SD cards & USB drives
