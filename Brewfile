@@ -27,14 +27,14 @@ brew "cmake"
 brew "cmatrix"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Create Docker hosts locally and on cloud providers
 brew "docker-machine"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# GNU multiple precision arithmetic library
-brew "gmp"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
 # Play, record, convert, and stream audio and video
@@ -155,6 +155,7 @@ brew "heroku/brew/heroku"
 brew "mongodb/brew/mongodb-community"
 # Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
+# JDK from the Java User Group (JUG)
 cask "adoptopenjdk"
 # AdoptOpenJDK OpenJDK (Java) Development Kit
 cask "adoptopenjdk11"
@@ -184,7 +185,7 @@ cask "butt"
 cask "chatty"
 # Server and cloud storage browser
 cask "cyberduck"
-# Free universal database tool and SQL client
+# Universal database tool and SQL client
 cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
@@ -204,15 +205,20 @@ cask "gpg-suite-no-mail"
 cask "handbrake"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Software for Logitech devices
+cask "logitech-options"
 # Cable-free audio router
 cask "loopback"
 # Track and update to the latest versions of installed software
 cask "macupdater"
+# Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Open-source, low-latency, high quality voice chat software for gaming
 cask "mumble"
 # Open-source music notation software
 cask "musescore"
+# Cloud gaming platform
+cask "nvidia-geforce-now"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # NewTek NDI integration for OBS Studio
@@ -264,7 +270,7 @@ cask "vagrant"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# App to run other operating systems without rebooting
+# Create, manage, and run virtual machines
 cask "vmware-fusion"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
