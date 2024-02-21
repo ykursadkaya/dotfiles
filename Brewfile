@@ -1,6 +1,7 @@
 tap "argoproj/tap"
 tap "buildpacks/tap"
 tap "buo/cask-upgrade"
+tap "hashicorp/tap"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -88,8 +89,6 @@ brew "grafana"
 brew "graphviz"
 # GNU grep, egrep and fgrep
 brew "grep"
-# Development framework for multimedia applications
-brew "gstreamer"
 # Reliable, high performance TCP/HTTP load balancer
 brew "haproxy"
 # Kubernetes package manager
@@ -128,7 +127,7 @@ brew "kubectx"
 brew "kustomize"
 # Kubernetes Native Policy Management
 brew "kyverno"
-# Emulator for x86 and PowerPC
+# Generic machine emulator and virtualizer
 brew "qemu"
 # Linux virtual machines
 brew "lima"
@@ -167,13 +166,15 @@ brew "pinentry-mac"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Object-relational database system
-brew "postgresql@15"
+brew "postgresql@16", link: true
 # Service monitoring system and time series database
 brew "prometheus"
 # Log agent for Loki
 brew "promtail"
 # QR Code generation
 brew "qrencode"
+# Rsync for cloud storage
+brew "rclone"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Search tool like grep and The Silver Searcher
@@ -194,14 +195,10 @@ brew "sox"
 brew "sshuttle"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
-# CLI for extracting streams from various websites to a video player
-brew "streamlink"
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale"
 # Tool to build, change, and version infrastructure
 brew "terraform"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
 # Modern reverse proxy
@@ -250,7 +247,7 @@ cask "couchbase-server-community"
 cask "cyberduck"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Web browser
 cask "firefox"
@@ -258,6 +255,8 @@ cask "firefox"
 cask "fork"
 # Free and open-source image editor
 cask "gimp"
+# Go (golang) IDE
+cask "goland"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
 cask "grid-clock"
@@ -273,8 +272,6 @@ cask "keka"
 cask "lens"
 # NDI SDK
 cask "libndi"
-# Track and update to the latest versions of installed software
-cask "macupdater"
 # Sandbox construction video game
 cask "minecraft"
 # Tool to control external monitor brightness & volume
@@ -293,17 +290,17 @@ cask "obs-ndi"
 cask "orbstack"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
-# QuickLook generator for Markdown files
+# Quick Look generator for Markdown files
 cask "qlmarkdown"
-# QuickLook plugin to view patch files
+# Quick Look plugin to view patch files
 cask "qlprettypatch"
-# QuickLook plugin for plaintext files without an extension
+# Quick Look plugin for plaintext files without an extension
 cask "qlstephen"
 # Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
-# QuickLook plugin for CSV files
+# Quick Look plugin for CSV files
 cask "quicklook-csv"
-# QuickLook plugin for JSON files
+# Quick Look plugin for JSON files
 cask "quicklook-json"
 # Archive manager for data compression and backups
 cask "rar"
@@ -313,6 +310,8 @@ cask "reaper"
 cask "skim"
 # High-quality network audio streaming
 cask "sonobus"
+# Music streaming service
+cask "spotify"
 # Video game digital distribution service
 cask "steam"
 # Text editor for code, markup and prose
@@ -333,7 +332,7 @@ cask "vlc"
 cask "vmware-fusion"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
-# QuickLook plugin for webp files
+# Quick Look plugin for webp files
 cask "webpquicklook"
 # Network protocol analyzer
 cask "wireshark"
