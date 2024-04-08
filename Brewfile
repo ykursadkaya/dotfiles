@@ -31,8 +31,6 @@ brew "certbot"
 brew "clusterctl"
 # Cross-platform make
 brew "cmake"
-# Tool for service discovery, monitoring and configuration
-brew "consul"
 # DNS server that chains plugins
 brew "coredns"
 # GNU File, Shell, and Text utilities
@@ -50,7 +48,7 @@ brew "deno"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
 # Cloud-native high-performance edge/middle/service proxy
@@ -117,6 +115,8 @@ brew "k6"
 brew "k9s"
 # Open-source distributed event streaming platform
 brew "kafka"
+# Build and deploy Go applications on Kubernetes
+brew "ko"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Package manager for kubectl plugins
@@ -139,6 +139,8 @@ brew "logcli"
 brew "loki"
 # Mac App Store command-line interface
 brew "mas"
+# High performance, distributed memory object caching system
+brew "memcached"
 # Run a Kubernetes cluster locally
 brew "minikube"
 # Mock code autogenerator for Golang
@@ -149,8 +151,6 @@ brew "molten-vk"
 brew "protobuf"
 # Remote terminal application
 brew "mosh"
-# Media player based on MPlayer and mplayer2
-brew "mpv"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Open source relational database management system
@@ -175,8 +175,6 @@ brew "promtail"
 brew "qrencode"
 # Rsync for cloud storage
 brew "rclone"
-# Persistent key-value database, with built-in net interface
-brew "redis"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
@@ -197,16 +195,14 @@ brew "sshuttle"
 brew "stern"
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Simplified and community-driven man pages
 brew "tldr"
 # Modern reverse proxy
 brew "traefik"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Secures, stores, and tightly controls access to secrets
-brew "vault"
+# High-performance data structure server that primarily serves key/value workloads
+brew "valkey"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
@@ -219,6 +215,12 @@ brew "zig"
 brew "argoproj/tap/kubectl-argo-rollouts"
 # A CLI for building apps using Cloud Native Buildpacks
 brew "buildpacks/tap/pack"
+# Consul
+brew "hashicorp/tap/consul"
+# Terraform
+brew "hashicorp/tap/terraform"
+# Vault
+brew "hashicorp/tap/vault"
 # Open source continuous profiling software
 brew "pyroscope-io/brew/pyroscope"
 # Redpanda CLI & toolbox
@@ -233,8 +235,6 @@ cask "arc"
 cask "au-lab"
 # Multi-track audio editor and recorder
 cask "audacity"
-# Two-factor authentication software
-cask "authy"
 # Desktop password and login vault
 cask "bitwarden"
 # E-books management software
@@ -274,6 +274,8 @@ cask "lens"
 cask "libndi"
 # Sandbox construction video game
 cask "minecraft"
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Open-source, low-latency, high quality voice chat software for gaming
@@ -288,26 +290,8 @@ cask "obs"
 cask "obs-ndi"
 # Replacement for Docker Desktop
 cask "orbstack"
-# Display image info and preview unsupported formats in QuickLook
-cask "qlimagesize"
-# Quick Look generator for Markdown files
-cask "qlmarkdown"
-# Quick Look plugin to view patch files
-cask "qlprettypatch"
-# Quick Look plugin for plaintext files without an extension
-cask "qlstephen"
-# Thumbnails, static previews, cover art and metadata for video files
-cask "qlvideo"
-# Quick Look plugin for CSV files
-cask "quicklook-csv"
-# Quick Look plugin for JSON files
-cask "quicklook-json"
-# Archive manager for data compression and backups
-cask "rar"
 # Digital audio production application
 cask "reaper"
-# PDF reader and note-taking application
-cask "skim"
 # High-quality network audio streaming
 cask "sonobus"
 # Music streaming service
@@ -332,8 +316,6 @@ cask "vlc"
 cask "vmware-fusion"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
-# Quick Look plugin for webp files
-cask "webpquicklook"
 # Network protocol analyzer
 cask "wireshark"
 # Open-source version of the X.Org X Window System

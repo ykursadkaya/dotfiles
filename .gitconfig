@@ -15,7 +15,9 @@
 [core]
 	excludesfile = /Users/ykursadkaya/.gitignore_global
 [commit]
-	template = /Users/ykursadkaya/.stCommitMsg
+	# template = /Users/ykursadkaya/.stCommitMsg
 	gpgsign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[push]
+	autoSetupRemote = true
