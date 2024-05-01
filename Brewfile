@@ -48,7 +48,7 @@ brew "deno"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
 # Cloud-native high-performance edge/middle/service proxy
@@ -161,6 +161,8 @@ brew "nmap"
 brew "opensearch"
 # Open source visualization dashboards for OpenSearch
 brew "opensearch-dashboards"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
+brew "opentofu"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Tool for managing OCI containers and pods
@@ -294,6 +296,8 @@ cask "orbstack"
 cask "reaper"
 # High-quality network audio streaming
 cask "sonobus"
+# Control your Sonos system
+cask "sonos"
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service
@@ -314,8 +318,6 @@ cask "visual-studio-code"
 cask "vlc"
 # Create, manage, and run virtual machines
 cask "vmware-fusion"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 # Network protocol analyzer
 cask "wireshark"
 # Open-source version of the X.Org X Window System
