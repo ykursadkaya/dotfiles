@@ -48,7 +48,7 @@ brew "deno"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
 # Cloud-native high-performance edge/middle/service proxy
@@ -272,8 +272,6 @@ cask "iterm2"
 cask "keka"
 # Kubernetes IDE
 cask "lens"
-# NDI SDK
-cask "libndi"
 # Sandbox construction video game
 cask "minecraft"
 # Intercept, modify, replay, save HTTP/S traffic
@@ -288,8 +286,6 @@ cask "musescore"
 cask "nvidia-geforce-now"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# NDI integration for OBS Studio
-cask "obs-ndi"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Digital audio production application
