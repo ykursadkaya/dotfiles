@@ -1,12 +1,11 @@
 tap "argoproj/tap"
 tap "buildpacks/tap"
 tap "buo/cask-upgrade"
+tap "cirruslabs/cli"
 tap "hashicorp/tap"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "pyroscope-io/brew"
@@ -105,8 +104,6 @@ brew "inetutils"
 brew "iperf3"
 # Istio configuration command-line utility
 brew "istioctl"
-# Json incremental digger
-brew "jid"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Modern load testing tool, using Go and JavaScript
@@ -131,8 +128,6 @@ brew "kyverno"
 brew "qemu"
 # Linux virtual machines
 brew "lima"
-# Next-gen compiler infrastructure
-brew "llvm"
 # Run LogQL queries against a Loki server
 brew "logcli"
 # Horizontally-scalable, highly-available log aggregation system
@@ -189,16 +184,12 @@ brew "socat"
 brew "sonar-scanner"
 # Manage code quality
 brew "sonarqube"
-# SOund eXchange: universal sound sample translator
-brew "sox"
 # Proxy server that works as a poor man's VPN
 brew "sshuttle"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale"
-# Simplified and community-driven man pages
-brew "tldr"
 # Modern reverse proxy
 brew "traefik"
 # Display directories as trees (with optional color/HTML output)
@@ -217,6 +208,8 @@ brew "zig"
 brew "argoproj/tap/kubectl-argo-rollouts"
 # A CLI for building apps using Cloud Native Buildpacks
 brew "buildpacks/tap/pack"
+# Run macOS and Linux VMs on Apple Hardware
+brew "cirruslabs/cli/tart"
 # Consul
 brew "hashicorp/tap/consul"
 # Terraform
@@ -231,8 +224,6 @@ brew "redpanda-data/tap/redpanda"
 cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
-# Chromium based browser
-cask "arc"
 # Digital audio mixing application
 cask "au-lab"
 # Multi-track audio editor and recorder
@@ -249,8 +240,6 @@ cask "couchbase-server-community"
 cask "cyberduck"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Web browser
 cask "firefox"
 # GIT client
@@ -261,7 +250,6 @@ cask "gimp"
 cask "goland"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
-cask "grid-clock"
 # Open-source video transcoder
 cask "handbrake"
 # HTTP and GraphQL Client
@@ -308,8 +296,6 @@ cask "temurin"
 cask "tunnelblick"
 # Virtual machines UI using QEMU
 cask "utm"
-# Open-source code editor
-cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Create, manage, and run virtual machines
@@ -318,6 +304,8 @@ cask "vmware-fusion"
 cask "wireshark"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+# Multiplayer code editor
+cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Amphetamine", id: 937984704
