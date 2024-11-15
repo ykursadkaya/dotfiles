@@ -2,7 +2,8 @@
 	name = Yusuf Kursad Kaya
 	email = ykursadkaya@gmail.com
 	username = ykursadkaya
-	signingkey = EB3FBC405E0C2A2B
+	# signingkey = EB3FBC405E0C2A2B
+	signingkey = /Users/ykursadkaya/.ssh/id_ed25519.pub
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -18,6 +19,11 @@
 	# template = /Users/ykursadkaya/.stCommitMsg
 	gpgsign = true
 [gpg]
-	program = /opt/homebrew/bin/gpg
+	# program = /opt/homebrew/bin/gpg
+	format = ssh
 [push]
 	autoSetupRemote = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/ykursadkaya/.ssh/allowed_signers
+
+# echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_ed25519.pub)" >> ~/.ssh/allowed_signers
