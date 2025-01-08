@@ -24,7 +24,7 @@ export CGO_ENABLED=0
 
 export PATH="${PATH}:${HOME}/.krew/bin"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+# export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -45,9 +45,9 @@ alias clr-clip='echo -n "" | pbcopy'
 alias bfu='brew update && brew upgrade && brew cu -ac'
 alias bfuc='brew update && brew upgrade && brew cu -acy && brew cleanup --prune 0'
 
-alias {python,py3,py}='python3'
-alias pip='pip3'
-alias {pip3-upgrade,pip-upgrade}='pip3 list --format=json --outdated | jq -r ".[].name" | xargs -n1 pip3 install -U'
+# alias {python,py3,py}='python3'
+# alias pip='pip3'
+# alias {pip3-upgrade,pip-upgrade}='pip3 list --format=json --outdated | jq -r ".[].name" | xargs -n1 pip3 install -U'
 
 alias sshnull='ssh -o "UserKnownHostsFile /dev/null"'
 

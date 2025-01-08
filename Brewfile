@@ -14,18 +14,12 @@ tap "redpanda-data/tap"
 brew "bettercap"
 # GNU binary tools for native development
 brew "binutils"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Platform built on V8 to build network applications
-brew "node"
-# Secure and free password manager for all of your devices
-brew "bitwarden-cli"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Powerful, enterprise-ready, open source web server with automatic HTTPS
 brew "caddy"
-# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
-brew "certbot"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Home for the Cluster Management API work, a subproject of sig-cluster-lifecycle
 brew "clusterctl"
 # Cross-platform make
@@ -42,24 +36,24 @@ brew "crane"
 brew "curl"
 # Debugger for the Go programming language
 brew "delve"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
+# Embeddable SQL OLAP Database Management System
+brew "duckdb"
 # Cloud-native high-performance edge/middle/service proxy
 brew "envoy"
 # Key value store for shared configuration and service discovery
 brew "etcd"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Terminal JSON viewer
-brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -78,6 +72,8 @@ brew "go"
 brew "gofumpt"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Language server for the Go language
+brew "gopls"
 # Tool to list and diagnose Go processes currently running on your system
 brew "gops"
 # Gorgeous metric visualizations and dashboards for timeseries databases
@@ -122,10 +118,6 @@ brew "krew"
 brew "kubectx"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
-# Kubernetes Native Policy Management
-brew "kyverno"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Linux virtual machines
 brew "lima"
 # Run LogQL queries against a Loki server
@@ -138,8 +130,8 @@ brew "mas"
 brew "memcached"
 # Run a Kubernetes cluster locally
 brew "minikube"
-# Mock code autogenerator for Golang
-brew "mockery"
+# Sign files & verify signatures. Works with signify in OpenBSD
+brew "minisign"
 # Implementation of the Vulkan graphics and compute API on top of Metal
 brew "molten-vk"
 # Protocol buffers (Google's data interchange format)
@@ -152,10 +144,10 @@ brew "mtr"
 brew "mysql"
 # Port scanning utility for large networks
 brew "nmap"
+# Platform built on V8 to build network applications
+brew "node"
 # Open source distributed and RESTful search engine
 brew "opensearch"
-# Open source visualization dashboards for OpenSearch
-brew "opensearch-dashboards"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
 brew "opentofu"
 # Pinentry for GPG on Mac
@@ -163,11 +155,13 @@ brew "pinentry-mac"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Object-relational database system
-brew "postgresql@16", link: true
+brew "postgresql@17"
 # Service monitoring system and time series database
 brew "prometheus"
 # Log agent for Loki
 brew "promtail"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # QR Code generation
 brew "qrencode"
 # Rsync for cloud storage
@@ -184,6 +178,8 @@ brew "socat"
 brew "sonar-scanner"
 # Manage code quality
 brew "sonarqube"
+# Generate type safe Go from SQL
+brew "sqlc"
 # Proxy server that works as a poor man's VPN
 brew "sshuttle"
 # Tail multiple Kubernetes pods & their containers
@@ -202,10 +198,10 @@ brew "watch"
 brew "wget"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# HTTP benchmarking tool
+brew "wrk"
 # Programming language designed for robustness, optimality, and clarity
 brew "zig"
-# Kubectl Argo Rollouts Plugin.
-brew "argoproj/tap/kubectl-argo-rollouts"
 # A CLI for building apps using Cloud Native Buildpacks
 brew "buildpacks/tap/pack"
 # Run macOS and Linux VMs on Apple Hardware
@@ -216,8 +212,6 @@ brew "hashicorp/tap/consul"
 brew "hashicorp/tap/terraform"
 # Vault
 brew "hashicorp/tap/vault"
-# Open source continuous profiling software
-brew "pyroscope-io/brew/pyroscope"
 # Redpanda CLI & toolbox
 brew "redpanda-data/tap/redpanda"
 # Android SDK component
@@ -244,6 +238,8 @@ cask "discord"
 cask "firefox"
 # GIT client
 cask "fork"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
 # Go (golang) IDE
@@ -252,14 +248,10 @@ cask "goland"
 cask "gpg-suite-no-mail"
 # Open-source video transcoder
 cask "handbrake"
-# HTTP and GraphQL Client
-cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # File archiver
 cask "keka"
-# Kubernetes IDE
-cask "lens"
 # Sandbox construction video game
 cask "minecraft"
 # Intercept, modify, replay, save HTTP/S traffic
@@ -280,8 +272,6 @@ cask "orbstack"
 cask "reaper"
 # High-quality network audio streaming
 cask "sonobus"
-# Control your Sonos system
-cask "sonos"
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service
@@ -304,10 +294,13 @@ cask "vmware-fusion"
 cask "wireshark"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+# REST, GraphQL and gRPC client
+cask "yaak"
 # Multiplayer code editor
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Affinity Photo 2", id: 1616822987
 mas "Amphetamine", id: 937984704
 mas "DaVinci Resolve", id: 571213070
 mas "Developer", id: 640199958
@@ -315,10 +308,10 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
+mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
 mas "‎WhatsApp", id: 310633997
