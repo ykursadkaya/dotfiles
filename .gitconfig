@@ -2,7 +2,7 @@
 	name = Yusuf Kursad Kaya
 	email = ykursadkaya@gmail.com
 	username = ykursadkaya
-	# signingkey = EB3FBC405E0C2A2B
+	# signingkey = 820FEE0520DF0056
 	signingkey = /Users/ykursadkaya/.ssh/id_ed25519.pub
 [filter "lfs"]
 	clean = git-lfs clean -- %f

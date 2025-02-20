@@ -10,6 +10,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "pyroscope-io/brew"
 tap "redpanda-data/tap"
+# Simple, modern, secure file encryption
+brew "age"
 # Swiss army knife for network attacks and monitoring
 brew "bettercap"
 # GNU binary tools for native development
@@ -20,8 +22,6 @@ brew "btop"
 brew "caddy"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Home for the Cluster Management API work, a subproject of sig-cluster-lifecycle
-brew "clusterctl"
 # Cross-platform make
 brew "cmake"
 # DNS server that chains plugins
@@ -128,6 +128,8 @@ brew "loki"
 brew "mas"
 # High performance, distributed memory object caching system
 brew "memcached"
+# Modern and intuitive terminal-based text editor
+brew "micro"
 # Run a Kubernetes cluster locally
 brew "minikube"
 # Sign files & verify signatures. Works with signify in OpenBSD
@@ -174,10 +176,6 @@ brew "ruby"
 brew "scrcpy"
 # SOcket CAT: netcat on steroids
 brew "socat"
-# Launcher to analyze a project with SonarQube
-brew "sonar-scanner"
-# Manage code quality
-brew "sonarqube"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Proxy server that works as a poor man's VPN
@@ -202,8 +200,6 @@ brew "wireguard-tools"
 brew "wrk"
 # Programming language designed for robustness, optimality, and clarity
 brew "zig"
-# A CLI for building apps using Cloud Native Buildpacks
-brew "buildpacks/tap/pack"
 # Run macOS and Linux VMs on Apple Hardware
 brew "cirruslabs/cli/tart"
 # Consul
@@ -244,8 +240,6 @@ cask "ghostty"
 cask "gimp"
 # Go (golang) IDE
 cask "goland"
-# Tools to protect your files
-cask "gpg-suite-no-mail"
 # Open-source video transcoder
 cask "handbrake"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -310,8 +304,9 @@ mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Prime Video", id: 545519333
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
+mas "WhatsApp", id: 310633997
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
-mas "‎WhatsApp", id: 310633997
