@@ -20,8 +20,6 @@ brew "binutils"
 brew "btop"
 # Powerful, enterprise-ready, open source web server with automatic HTTPS
 brew "caddy"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Cross-platform make
 brew "cmake"
 # DNS server that chains plugins
@@ -32,6 +30,8 @@ brew "coreutils"
 brew "cosign"
 # Tool for interacting with remote images and registries
 brew "crane"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Debugger for the Go programming language
@@ -220,6 +220,8 @@ cask "au-lab"
 cask "audacity"
 # Desktop password and login vault
 cask "bitwarden"
+# 3D creation suite
+cask "blender"
 # E-books management software
 cask "calibre"
 # Free app that makes your Internet safer
@@ -242,6 +244,8 @@ cask "gimp"
 cask "goland"
 # Open-source video transcoder
 cask "handbrake"
+# For browse or develop RAW images and tethered shooting on Sony cameras
+cask "imaging-edge"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # File archiver
@@ -276,14 +280,14 @@ cask "sublime-text"
 cask "suspicious-package"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
+# Open-source BitTorrent client
+cask "transmission"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
 # Virtual machines UI using QEMU
 cask "utm"
 # Multimedia player
 cask "vlc"
-# Create, manage, and run virtual machines
-cask "vmware-fusion"
 # Network protocol analyzer
 cask "wireshark"
 # Open-source version of the X.Org X Window System
@@ -304,7 +308,6 @@ mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Prime Video", id: 545519333
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "WhatsApp", id: 310633997
