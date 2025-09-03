@@ -1,0 +1,42 @@
+{
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "tab_size": 2,
+  "seed_search_query_from_cursor": "selection",
+  "line_indicator_format": "long",
+  "show_whitespaces": "all",
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": true
+  },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": false
+    }
+  },
+  "minimap": {
+    "show": "auto",
+    "display_in": "all_editors",
+    "thumb": "always",
+    "current_line_highlight": "all"
+  },
+  "hide_mouse": "never",
+  "auto_signature_help": true,
+  "tabs": {
+    "close_position": "left",
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "errors"
+  },
+  "title_bar": {
+    "show_branch_icon": true
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "calls": {
+    "mute_on_join": true
+  }
+}
