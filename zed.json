@@ -12,7 +12,7 @@
   "diagnostics": {
     "include_warnings": true,
     "inline": {
-      "enabled": false
+      "enabled": true
     }
   },
   "minimap": {
