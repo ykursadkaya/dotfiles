@@ -3,11 +3,8 @@ tap "buildpacks/tap"
 tap "buo/cask-upgrade"
 tap "cirruslabs/cli"
 tap "hashicorp/tap"
-tap "homebrew/aliases"
-tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "homebrew/services"
 tap "pyroscope-io/brew"
 tap "redpanda-data/tap"
 # Simple, modern, secure file encryption
@@ -64,7 +61,7 @@ brew "git-lfs"
 brew "glab"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
@@ -146,8 +143,10 @@ brew "mtr"
 brew "mysql"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# HTTP load generator, inspired by rakyll/hey with tui animation
+brew "oha"
 # Open source distributed and RESTful search engine
 brew "opensearch"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
@@ -157,7 +156,7 @@ brew "pinentry-mac"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Object-relational database system
-brew "postgresql@17"
+brew "postgresql@18"
 # Service monitoring system and time series database
 brew "prometheus"
 # Log agent for Loki
@@ -170,8 +169,6 @@ brew "qrencode"
 brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Display and control your Android device
 brew "scrcpy"
 # SOcket CAT: netcat on steroids
@@ -226,8 +223,6 @@ cask "blender"
 cask "calibre"
 # Free app that makes your Internet safer
 cask "cloudflare-warp"
-# Distributed NoSQL cloud database
-cask "couchbase-server-community"
 # Server and cloud storage browser
 cask "cyberduck"
 # Voice and text chat software
@@ -242,12 +237,14 @@ cask "ghostty"
 cask "gimp"
 # Go (golang) IDE
 cask "goland"
+# Software-defined radio receiver powered by GNU Radio and Qt
+cask "gqrx"
 # Open-source video transcoder
-cask "handbrake"
+cask "handbrake-app"
+# Free and open-source media player
+cask "iina"
 # For browse or develop RAW images and tethered shooting on Sony cameras
 cask "imaging-edge"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # File archiver
 cask "keka"
 # Sandbox construction video game
@@ -289,7 +286,7 @@ cask "utm"
 # Multimedia player
 cask "vlc"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # REST, GraphQL and gRPC client
@@ -305,11 +302,11 @@ mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
+mas "uBlock Origin Lite", id: 6745342698
 mas "WhatsApp", id: 310633997
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025

@@ -31,13 +31,6 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 # export PATH="/usr/local/opt/node@10/bin:$PATH"
 # export PATH="/usr/local/opt/node@16/bin:$PATH"
 
-# export GO_ENV=stage
-# export OTEL_EXPORTER_ENABLED=false
-# export QUARKUS_PROFILE=stage
-# export SPRING_PROFILES_ACTIVE=stage
-# export NODE_ENV=stage
-# export env=stage
-
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 
 alias clr-clip='echo -n "" | pbcopy'
@@ -45,21 +38,11 @@ alias clr-clip='echo -n "" | pbcopy'
 alias bfu='brew update && brew upgrade && brew cu -ac'
 alias bfuc='brew update && brew upgrade && brew cu -acy && brew cleanup --prune 0'
 
-# alias {python,py3,py}='python3'
-# alias pip='pip3'
-# alias {pip3-upgrade,pip-upgrade}='pip3 list --format=json --outdated | jq -r ".[].name" | xargs -n1 pip3 install -U'
-
 alias sshnull='ssh -o "UserKnownHostsFile /dev/null"'
-
-# alias {fzfh,fh,h}='history 0 | sort -rn | fzf | tee >(zsh)'
-# alias hcat='history 0 | sort -rn | fzf | cat'
-# alias f='fuck'
 
 alias cdw='cd ~/Workspace'
 
 alias calreset='launchctl stop com.apple.CalendarAgent && launchctl start com.apple.CalendarAgent'
-
-alias persrepo='git config user.name "Yusuf Kursad Kaya" && git config user.email "ykursadkaya@gmail.com" && git config user.signingkey EB3FBC405E0C2A2B'
 
 jdk() {
     version=$1
@@ -77,8 +60,6 @@ function remac {
   sudo networksetup -detectnewhardware
   echo $(ifconfig en0 | grep ether)
 }
-
-# eval $(thefuck --alias)
 
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000000000
