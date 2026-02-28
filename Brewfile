@@ -17,8 +17,6 @@ brew "binutils"
 brew "btop"
 # Powerful, enterprise-ready, open source web server with automatic HTTPS
 brew "caddy"
-# Cross-platform make
-brew "cmake"
 # DNS server that chains plugins
 brew "coredns"
 # GNU File, Shell, and Text utilities
@@ -49,7 +47,7 @@ brew "etcd"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
@@ -75,6 +73,8 @@ brew "gopls"
 brew "gops"
 # Gorgeous metric visualizations and dashboards for timeseries databases
 brew "grafana"
+# CLI to interact with Grafana
+brew "grafanactl"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
@@ -89,7 +89,7 @@ brew "helmfile"
 brew "hey"
 # Improved top (interactive process viewer)
 brew "htop"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # GNU utilities for networking
 brew "inetutils"
@@ -99,14 +99,10 @@ brew "iperf3"
 brew "istioctl"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Modern load testing tool, using Go and JavaScript
-brew "k6"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Open-source distributed event streaming platform
 brew "kafka"
-# Build and deploy Go applications on Kubernetes
-brew "ko"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Package manager for kubectl plugins
@@ -137,8 +133,6 @@ brew "molten-vk"
 brew "protobuf"
 # Remote terminal application
 brew "mosh"
-# 'traceroute' and 'ping' in a single tool
-brew "mtr"
 # Open source relational database management system
 brew "mysql"
 # Port scanning utility for large networks
@@ -159,8 +153,8 @@ brew "podman"
 brew "postgresql@18"
 # Service monitoring system and time series database
 brew "prometheus"
-# Log agent for Loki
-brew "promtail"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # QR Code generation
@@ -187,6 +181,10 @@ brew "traefik"
 brew "tree"
 # High-performance data structure server that primarily serves key/value workloads
 brew "valkey"
+# Open source user-friendly database for logs from VictoriaMetrics
+brew "victorialogs"
+# Cost-effective and scalable monitoring solution and time series database
+brew "victoriametrics"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
